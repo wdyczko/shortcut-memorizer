@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Find</description>
+        <keystroke>Ctrl + F</keystroke>
+    </command>
+    <command>
+        <description>Find next</description>
+        <keystroke>F3</keystroke>
+    </command>
+    <command>
+        <description>Find previous</description>
+        <keystroke>Shift + F3</keystroke>
+    </command>
+    <command>
+        <description>Replace</description>
+        <keystroke>Ctrl + R</keystroke>
+    </command>
+    <command>
+        <description>Find in path</description>
+        <keystroke>Ctrl + Shift + F</keystroke>
+    </command>
+    <command>
+        <description>Replace in path</description>
+        <keystroke>Ctrl + Shift + R</keystroke>
+    </command>
+    <command>
+        <description>Search structurally</description>
+        <keystroke>Ctrl + Shift + S</keystroke>
+    </command>
+    <command>
+        <description>Replace structurally</description>
+        <keystroke>Ctrl + Shift + M</keystroke>
+    </command>
+</commands>

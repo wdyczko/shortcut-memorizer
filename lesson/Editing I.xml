@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Basic code completion (the name of any class, method or variable)</description>
+        <keystroke>Ctrl + Space</keystroke>
+    </command>
+    <command>
+        <description>Smart code completion (filters the list of methods and variables by expected type)</description>
+        <keystroke>Ctrl + Shift + Space</keystroke>
+    </command>
+    <command>
+        <description>Complete statement</description>
+        <keystroke>Ctrl + Shift + Enter</keystroke>
+    </command>
+    <command>
+        <description>Parameter info (within method call arguments)</description>
+        <keystroke>Ctrl + P</keystroke>
+    </command>
+    <command>
+        <description>Quick documentation lookup</description>
+        <keystroke>Ctrl + Q</keystroke>
+    </command>
+    <command>
+        <description>External Doc</description>
+        <keystroke>Shift + F1</keystroke>
+    </command>
+</commands>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Select successively increasing code blocks</description>
+        <keystroke>Ctrl + W</keystroke>
+    </command>
+    <command>
+        <description>Decrease current selection to previous state</description>
+        <keystroke>Ctrl + Shift + W</keystroke>
+    </command>
+    <command>
+        <description>Context info</description>
+        <keystroke>Alt + Q</keystroke>
+    </command>
+    <command>
+        <description>Show intention actions and quick-fixes</description>
+        <keystroke>Alt + Enter</keystroke>
+    </command>
+    <command>
+        <description>Reformat code</description>
+        <keystroke>Ctrl + Alt + L</keystroke>
+    </command>
+    <command>
+        <description>Optimize imports</description>
+        <keystroke>Ctrl + Alt + O</keystroke>
+    </command>
+    <command>
+        <description>Auto-indent line(s)</description>
+        <keystroke>Ctrl + Alt + I</keystroke>
+    </command>
+    <command>
+        <description>Indent selected lines</description>
+        <keystroke>Tab</keystroke>
+    </command>
+    <command>
+        <description>Unindent selected lines</description>
+        <keystroke>Shift + Tab</keystroke>
+    </command>
+    <command>
+        <description>Paste from recent buffers...</description>
+        <keystroke>Ctrl + Shift + V</keystroke>
+    </command>
+    <command>
+        <description>Duplicate current line or selected block</description>
+        <keystroke>Ctrl + D</keystroke>
+    </command>
+    <command>
+        <description>Delete line at carret</description>
+        <keystroke>Ctrl + Y</keystroke>
+    </command>
+</commands>

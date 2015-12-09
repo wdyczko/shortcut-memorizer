@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Basic code completion (the name of any class, method or variable)</description>
+        <keystroke>Ctrl + Space</keystroke>
+    </command>
+    <command>
+        <description>Smart code completion (filters the list of methods and variables by expected type)</description>
+        <keystroke>Ctrl + Shift + Space</keystroke>
+    </command>
+    <command>
+        <description>Complete statement</description>
+        <keystroke>Ctrl + Shift + Enter</keystroke>
+    </command>
+    <command>
+        <description>Parameter info (within method call arguments)</description>
+        <keystroke>Ctrl + P</keystroke>
+    </command>
+    <command>
+        <description>Quick documentation lookup</description>
+        <keystroke>Ctrl + Q</keystroke>
+    </command>
+    <command>
+        <description>External Doc</description>
+        <keystroke>Shift + F1</keystroke>
+    </command>
+    <command>
+        <description>Show descriptions of error or warning at caret</description>
+        <keystroke>Ctrl + F1</keystroke>
+    </command>
+    <command>
+        <description>Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)</description>
+        <keystroke>Alt + Insert</keystroke>
+    </command>
+    <command>
+        <description>Override methods</description>
+        <keystroke>Ctrl + O</keystroke>
+    </command>
+    <command>
+        <description>Implement methods</description>
+        <keystroke>Ctrl + I</keystroke>
+    </command>
+    <command>
+        <description>Surround with... (if..else, try..catch, for, synchronized, etc.)</description>
+        <keystroke>Ctrl + Alt + T</keystroke>
+    </command>
+    <command>
+        <description>Comment/uncomment with line comment</description>
+        <keystroke>Ctrl + /</keystroke>
+    </command>
+    <command>
+        <description>Comment/uncomment with block comment</description>
+        <keystroke>Ctrl + Shift + /</keystroke>
+    </command>
+</commands>

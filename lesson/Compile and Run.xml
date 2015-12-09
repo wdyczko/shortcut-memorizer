@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Find usages</description>
+        <keystroke>Alt + F7</keystroke>
+    </command>
+    <command>
+        <description>Find usages in file</description>
+        <keystroke>Ctrl + F7</keystroke>
+    </command>
+    <command>
+        <description>Highlight usages in file</description>
+        <keystroke>Ctrl + Shift + F7</keystroke>
+    </command>
+    <command>
+        <description>Show usages</description>
+        <keystroke>Ctrl + Alt + F7</keystroke>
+    </command>
+</commands>
