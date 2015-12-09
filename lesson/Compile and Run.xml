@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <commands>
     <command>
-        <description>Find usages</description>
-        <keystroke>Alt + F7</keystroke>
+        <description>Make project (compile modified and dependent)</description>
+        <keystroke>Ctrl + F9</keystroke>
     </command>
     <command>
-        <description>Find usages in file</description>
-        <keystroke>Ctrl + F7</keystroke>
+        <description>Compile selected file, package or module</description>
+        <keystroke>Ctrl + Shift + F9</keystroke>
     </command>
     <command>
-        <description>Highlight usages in file</description>
-        <keystroke>Ctrl + Shift + F7</keystroke>
+        <description>Select configuration and run</description>
+        <keystroke>Alt + Shift + F10</keystroke>
     </command>
     <command>
-        <description>Show usages</description>
-        <keystroke>Ctrl + Alt + F7</keystroke>
+        <description>Select configuration and debug</description>
+        <keystroke>Alt + Shift + F9</keystroke>
+    </command>
+    <command>
+        <description>Run</description>
+        <keystroke>Shift + F10</keystroke>
+    </command>
+    <command>
+        <description>Debug</description>
+        <keystroke>Shift + F9</keystroke>
+    </command>
+    <command>
+        <description>Run context configuration from editor</description>
+        <keystroke>Ctrl + Shift + F10</keystroke>
     </command>
 </commands>

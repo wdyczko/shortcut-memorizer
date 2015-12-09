@@ -1,25 +1,45 @@
 package org.drvad3r;
 
-import javafx.event.Event;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.util.Duration;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by wdyczko on 12/9/2015.
  */
 public class Controller {
+    public static final String CORRECT_LABEL_STYLE = "-fx-text-fill: green; -fx-font-size: 24px;";
+    public static final String WRONG_LABEL_STYLE = "-fx-text-fill: red; -fx-font-size: 24px;";
+    @FXML
+    private Label statusLabel;
+    @FXML
+    private Label descriptionLabel;
+    @FXML
+    private ComboBox lessonComboBox;
     @FXML
     private Label inputLabel;
-    @FXML
-    private TextField inputTextField;
+
+    private Command current;
+    private CommandList commandList;
+    private ArrayList<Integer> passed = new ArrayList<>();
+    private int currentIndex = -1;
+    private StorageManager storageManager;
 
     public void initialize()
     {
+        storageManager = new StorageManager();
         inputLabel.setFocusTraversable(true);
         inputLabel.requestFocus();
+        lessonComboBox.setItems(storageManager.getLessonList());
     }
 
     public void onKeyReleased(KeyEvent keyEvent) {
@@ -29,8 +49,36 @@ public class Controller {
             return;
         }
         else {
-            inputLabel.setText(getKeyStroke(keyEvent, prefix));
+            String keyStroke = getKeyStroke(keyEvent, prefix);
+            inputLabel.setText(keyStroke);
+            checkPassCondition(keyStroke);
         }
+    }
+
+    private void checkPassCondition(String keyStroke)
+    {
+        if(current.getKeystroke().trim().equals(keyStroke.trim()))
+        {
+            statusLabel.setStyle(CORRECT_LABEL_STYLE);
+            statusLabel.setText("Correct! " + current.getKeystroke());
+            inputLabel.setText("");
+            randomizeCommand();
+//            recoverEmptyStatusAfterTime(2);
+        }
+        else
+        {
+            statusLabel.setStyle(WRONG_LABEL_STYLE);
+            statusLabel.setText("Wrong!!! Should be: " + current.getKeystroke());
+        }
+    }
+
+    private void recoverEmptyStatusAfterTime(int time)
+    {
+        Timeline timeline = new Timeline(new KeyFrame(
+                Duration.seconds(time),
+                actionEvent -> statusLabel.setText("")
+        ));
+        timeline.play();
     }
 
     private String getKeyStroke(KeyEvent keyEvent, String prefix) {
@@ -149,4 +197,31 @@ public class Controller {
         return prefix;
     }
 
+    private void randomizeCommand()
+    {
+        Random random = new Random();
+        do
+        {
+            currentIndex = random.nextInt(commandList.getCommands().size());
+        } while(passed.contains(currentIndex));
+        passed.add(currentIndex);
+        if(passed.size() == commandList.getCommands().size())
+        {
+            passed.clear();
+        }
+        current = commandList.getCommands().get(currentIndex);
+        descriptionLabel.setText(current.getDescription());
+    }
+
+    @FXML
+    private void onLessonChoose(ActionEvent actionEvent)
+    {
+        inputLabel.setText("");
+        statusLabel.setText("");
+        commandList = storageManager.load(lessonComboBox.getSelectionModel().getSelectedItem().toString());
+        passed.clear();
+        currentIndex = -1;
+        randomizeCommand();
+        inputLabel.requestFocus();
+    }
 }

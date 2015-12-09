@@ -1,55 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <commands>
     <command>
-        <description>Basic code completion (the name of any class, method or variable)</description>
-        <keystroke>Ctrl + Space</keystroke>
+        <description>Find</description>
+        <keystroke>Ctrl + F</keystroke>
     </command>
     <command>
-        <description>Smart code completion (filters the list of methods and variables by expected type)</description>
-        <keystroke>Ctrl + Shift + Space</keystroke>
+        <description>Find next</description>
+        <keystroke>F3</keystroke>
     </command>
     <command>
-        <description>Complete statement</description>
-        <keystroke>Ctrl + Shift + Enter</keystroke>
+        <description>Find previous</description>
+        <keystroke>Shift + F3</keystroke>
     </command>
     <command>
-        <description>Parameter info (within method call arguments)</description>
-        <keystroke>Ctrl + P</keystroke>
+        <description>Replace</description>
+        <keystroke>Ctrl + R</keystroke>
     </command>
     <command>
-        <description>Quick documentation lookup</description>
-        <keystroke>Ctrl + Q</keystroke>
+        <description>Find in path</description>
+        <keystroke>Ctrl + Shift + F</keystroke>
     </command>
     <command>
-        <description>External Doc</description>
-        <keystroke>Shift + F1</keystroke>
+        <description>Replace in path</description>
+        <keystroke>Ctrl + Shift + R</keystroke>
     </command>
     <command>
-        <description>Show descriptions of error or warning at caret</description>
-        <keystroke>Ctrl + F1</keystroke>
+        <description>Search structurally</description>
+        <keystroke>Ctrl + Shift + S</keystroke>
     </command>
     <command>
-        <description>Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)</description>
-        <keystroke>Alt + Insert</keystroke>
-    </command>
-    <command>
-        <description>Override methods</description>
-        <keystroke>Ctrl + O</keystroke>
-    </command>
-    <command>
-        <description>Implement methods</description>
-        <keystroke>Ctrl + I</keystroke>
-    </command>
-    <command>
-        <description>Surround with... (if..else, try..catch, for, synchronized, etc.)</description>
-        <keystroke>Ctrl + Alt + T</keystroke>
-    </command>
-    <command>
-        <description>Comment/uncomment with line comment</description>
-        <keystroke>Ctrl + /</keystroke>
-    </command>
-    <command>
-        <description>Comment/uncomment with block comment</description>
-        <keystroke>Ctrl + Shift + /</keystroke>
+        <description>Replace structurally</description>
+        <keystroke>Ctrl + Shift + M</keystroke>
     </command>
 </commands>

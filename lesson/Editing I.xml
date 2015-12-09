@@ -24,4 +24,32 @@
         <description>External Doc</description>
         <keystroke>Shift + F1</keystroke>
     </command>
+    <command>
+        <description>Show descriptions of error or warning at caret</description>
+        <keystroke>Ctrl + F1</keystroke>
+    </command>
+    <command>
+        <description>Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)</description>
+        <keystroke>Alt + Insert</keystroke>
+    </command>
+    <command>
+        <description>Override methods</description>
+        <keystroke>Ctrl + O</keystroke>
+    </command>
+    <command>
+        <description>Implement methods</description>
+        <keystroke>Ctrl + I</keystroke>
+    </command>
+    <command>
+        <description>Surround with... (if..else, try..catch, for, synchronized, etc.)</description>
+        <keystroke>Ctrl + Alt + T</keystroke>
+    </command>
+    <command>
+        <description>Comment/uncomment with line comment</description>
+        <keystroke>Ctrl + /</keystroke>
+    </command>
+    <command>
+        <description>Comment/uncomment with block comment</description>
+        <keystroke>Ctrl + Shift + /</keystroke>
+    </command>
 </commands>

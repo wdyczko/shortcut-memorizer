@@ -1,55 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <commands>
     <command>
-        <description>Basic code completion (the name of any class, method or variable)</description>
-        <keystroke>Ctrl + Space</keystroke>
+        <description>Select successively increasing code blocks</description>
+        <keystroke>Ctrl + W</keystroke>
     </command>
     <command>
-        <description>Smart code completion (filters the list of methods and variables by expected type)</description>
-        <keystroke>Ctrl + Shift + Space</keystroke>
+        <description>Decrease current selection to previous state</description>
+        <keystroke>Ctrl + Shift + W</keystroke>
     </command>
     <command>
-        <description>Complete statement</description>
-        <keystroke>Ctrl + Shift + Enter</keystroke>
+        <description>Context info</description>
+        <keystroke>Alt + Q</keystroke>
     </command>
     <command>
-        <description>Parameter info (within method call arguments)</description>
-        <keystroke>Ctrl + P</keystroke>
+        <description>Show intention actions and quick-fixes</description>
+        <keystroke>Alt + Enter</keystroke>
     </command>
     <command>
-        <description>Quick documentation lookup</description>
-        <keystroke>Ctrl + Q</keystroke>
+        <description>Reformat code</description>
+        <keystroke>Ctrl + Alt + L</keystroke>
     </command>
     <command>
-        <description>External Doc</description>
-        <keystroke>Shift + F1</keystroke>
+        <description>Optimize imports</description>
+        <keystroke>Ctrl + Alt + O</keystroke>
     </command>
     <command>
-        <description>Show descriptions of error or warning at caret</description>
-        <keystroke>Ctrl + F1</keystroke>
+        <description>Auto-indent line(s)</description>
+        <keystroke>Ctrl + Alt + I</keystroke>
     </command>
     <command>
-        <description>Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)</description>
-        <keystroke>Alt + Insert</keystroke>
+        <description>Indent selected lines</description>
+        <keystroke>Tab</keystroke>
     </command>
     <command>
-        <description>Override methods</description>
-        <keystroke>Ctrl + O</keystroke>
+        <description>Unindent selected lines</description>
+        <keystroke>Shift + Tab</keystroke>
     </command>
     <command>
-        <description>Implement methods</description>
-        <keystroke>Ctrl + I</keystroke>
+        <description>Paste from recent buffers...</description>
+        <keystroke>Ctrl + Shift + V</keystroke>
     </command>
     <command>
-        <description>Surround with... (if..else, try..catch, for, synchronized, etc.)</description>
-        <keystroke>Ctrl + Alt + T</keystroke>
+        <description>Duplicate current line or selected block</description>
+        <keystroke>Ctrl + D</keystroke>
     </command>
     <command>
-        <description>Comment/uncomment with line comment</description>
-        <keystroke>Ctrl + /</keystroke>
-    </command>
-    <command>
-        <description>Comment/uncomment with block comment</description>
-        <keystroke>Ctrl + Shift + /</keystroke>
+        <description>Delete line at carret</description>
+        <keystroke>Ctrl + Y</keystroke>
     </command>
 </commands>
