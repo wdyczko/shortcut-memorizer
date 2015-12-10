@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Call hierarchy</description>
+        <keystroke>Ctrl + Alt + H</keystroke>
+    </command>
+    <command>
+        <description>Next highlighted error</description>
+        <keystroke>F2</keystroke>
+    </command>
+    <command>
+        <description>Previous highlighted error</description>
+        <keystroke>Shift + F2</keystroke>
+    </command>
+    <command>
+        <description>Edit source</description>
+        <keystroke>F4</keystroke>
+    </command>
+    <command>
+        <description>View source</description>
+        <keystroke>Ctrl + Enter</keystroke>
+    </command>
+    <command>
+        <description>Show navigation bar</description>
+        <keystroke>Alt + Home</keystroke>
+    </command>
+    <command>
+        <description>Toggle bookmark</description>
+        <keystroke>F11</keystroke>
+    </command>
+    <command>
+        <description>Toggle bookmark with mnemonic</description>
+        <keystroke>Ctrl + F11</keystroke>
+    </command>
+    <command>
+        <description>Show bookmarks</description>
+        <keystroke>Shift + F11</keystroke>
+    </command>
+</commands>

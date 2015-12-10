@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Step over</description>
+        <keystroke>F8</keystroke>
+    </command>
+    <command>
+        <description>Step into</description>
+        <keystroke>F7</keystroke>
+    </command>
+    <command>
+        <description>Smart step into</description>
+        <keystroke>Shift + F7</keystroke>
+    </command>
+    <command>
+        <description>Step out</description>
+        <keystroke>Shift + F8</keystroke>
+    </command>
+    <command>
+        <description>Run to cursor</description>
+        <keystroke>Alt + F9</keystroke>
+    </command>
+    <command>
+        <description>Evaluate expression</description>
+        <keystroke>Alt + F8</keystroke>
+    </command>
+    <command>
+        <description>Resume program</description>
+        <keystroke>F9</keystroke>
+    </command>
+    <command>
+        <description>Toggle breakpoint</description>
+        <keystroke>Ctrl + F8</keystroke>
+    </command>
+    <command>
+        <description>View breakpoints</description>
+        <keystroke>Ctrl + Shift + F8</keystroke>
+    </command>
+</commands>

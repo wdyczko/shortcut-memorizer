@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Go to class</description>
+        <keystroke>Ctrl + N</keystroke>
+    </command>
+    <command>
+        <description>Go to file</description>
+        <keystroke>Ctrl + Shift + N</keystroke>
+    </command>
+    <command>
+        <description>Go to symbol</description>
+        <keystroke>Ctrl + Alt + Shift + N</keystroke>
+    </command>
+    <command>
+        <description>Go to next editor tab</description>
+        <keystroke>Alt + Right</keystroke>
+    </command>
+    <command>
+        <description>Go to previous editor tab</description>
+        <keystroke>Alt + Left</keystroke>
+    </command>
+    <command>
+        <description>Go to previous tool window</description>
+        <keystroke>Escape</keystroke>
+    </command>
+    <command>
+        <description>Hide active or last active window</description>
+        <keystroke>Shift + Escape</keystroke>
+    </command>
+    <command>
+        <description>Close active run/messages/find/... tab</description>
+        <keystroke>Ctrl + Shift + F4</keystroke>
+    </command>
+    <command>
+        <description>Go to line</description>
+        <keystroke>Ctrl + G</keystroke>
+    </command>
+    <command>
+        <description>Recent files popup</description>
+        <keystroke>Ctrl + E</keystroke>
+    </command>
+    <command>
+        <description>Navigate back</description>
+        <keystroke>Ctrl + Alt + Backspace</keystroke>
+    </command>
+    <command>
+        <description>Navigate to last edit location</description>
+        <keystroke>Ctrl + Shift + Backspace</keystroke>
+    </command>
+    <command>
+        <description>Select current file or symbol in any view</description>
+        <keystroke>Alt + F1</keystroke>
+    </command>
+</commands>

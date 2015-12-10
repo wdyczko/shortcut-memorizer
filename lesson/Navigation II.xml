@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Go to declaration</description>
+        <keystroke>Ctrl + B</keystroke>
+    </command>
+    <command>
+        <description>Go to implementation(s)</description>
+        <keystroke>Ctrl + Alt + B</keystroke>
+    </command>
+    <command>
+        <description>Open quick definition lookup</description>
+        <keystroke>Ctrl + Shift + I</keystroke>
+    </command>
+    <command>
+        <description>Go to type declaration</description>
+        <keystroke>Ctrl + Shift + B</keystroke>
+    </command>
+    <command>
+        <description>Go to super-method/super-class</description>
+        <keystroke>Ctrl + U</keystroke>
+    </command>
+    <command>
+        <description>Go to previous method</description>
+        <keystroke>Alt + Up</keystroke>
+    </command>
+    <command>
+        <description>Go to next method</description>
+        <keystroke>Alt + Down</keystroke>
+    </command>
+    <command>
+        <description>Move to code block end</description>
+        <keystroke>Ctrl + ]</keystroke>
+    </command>
+    <command>
+        <description>Move to code block start</description>
+        <keystroke>Ctrl + [</keystroke>
+    </command>
+    <command>
+        <description>File structure popup</description>
+        <keystroke>Ctrl + F12</keystroke>
+    </command>
+    <command>
+        <description>Type hierarchy</description>
+        <keystroke>Ctrl + H</keystroke>
+    </command>
+    <command>
+        <description>Method hierarchy</description>
+        <keystroke>Ctrl + Shift + H</keystroke>
+    </command>
+</commands>

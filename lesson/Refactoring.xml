@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Copy</description>
+        <keystroke>F5</keystroke>
+    </command>
+    <command>
+        <description>Move</description>
+        <keystroke>F6</keystroke>
+    </command>
+    <command>
+        <description>Safe Delete</description>
+        <keystroke>Alt + Delete</keystroke>
+    </command>
+    <command>
+        <description>Rename</description>
+        <keystroke>Shift + F6</keystroke>
+    </command>
+    <command>
+        <description>Change Signature</description>
+        <keystroke>Ctrl + F6</keystroke>
+    </command>
+    <command>
+        <description>Inline</description>
+        <keystroke>Ctrl + Alt + N</keystroke>
+    </command>
+    <command>
+        <description>Extract Method</description>
+        <keystroke>Ctrl + Alt + M</keystroke>
+    </command>
+    <command>
+        <description>Extract Variable</description>
+        <keystroke>Ctrl + Alt + V</keystroke>
+    </command>
+    <command>
+        <description>Extract Field</description>
+        <keystroke>Ctrl + Alt + F</keystroke>
+    </command>
+    <command>
+        <description>Extract Constant</description>
+        <keystroke>Ctrl + Alt + C</keystroke>
+    </command>
+    <command>
+        <description>Extract Parameter</description>
+        <keystroke>Ctrl + Alt + P</keystroke>
+    </command>
+    <command>
+        <description>Refactor This...</description>
+        <keystroke>Ctrl + Alt + Shift + T</keystroke>
+    </command>
+</commands>

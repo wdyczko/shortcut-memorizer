@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Commit project to VCS</description>
+        <keystroke>Ctrl + K</keystroke>
+    </command>
+    <command>
+        <description>Update project from VCS</description>
+        <keystroke>Ctrl + T</keystroke>
+    </command>
+    <command>
+        <description>View recent changes</description>
+        <keystroke>Alt + Shift + C</keystroke>
+    </command>
+    <command>
+        <description>VCS quick popup</description>
+        <keystroke>Alt + `</keystroke>
+    </command>
+    <command>
+        <description>Surround with Live Template</description>
+        <keystroke>Ctrl + Alt + J</keystroke>
+    </command>
+    <command>
+        <description>Insert live template</description>
+        <keystroke>Ctrl + J</keystroke>
+    </command>
+</commands>

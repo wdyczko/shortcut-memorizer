@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Open messages window</description>
+        <keystroke>Alt + 0</keystroke>
+    </command>
+    <command>
+        <description>Open project window</description>
+        <keystroke>Alt + 1</keystroke>
+    </command>
+    <command>
+        <description>Open favourites window</description>
+        <keystroke>Alt + 2</keystroke>
+    </command>
+    <command>
+        <description>Open find window (if looked for)</description>
+        <keystroke>Alt + 3</keystroke>
+    </command>
+    <command>
+        <description>Open run window</description>
+        <keystroke>Alt + 4</keystroke>
+    </command>
+    <command>
+        <description>Open debug window</description>
+        <keystroke>Alt + 5</keystroke>
+    </command>
+    <command>
+        <description>Open todo window</description>
+        <keystroke>Alt + 6</keystroke>
+    </command>
+    <command>
+        <description>Open structure window</description>
+        <keystroke>Alt + 7</keystroke>
+    </command>
+    <command>
+        <description>Open version control window</description>
+        <keystroke>Alt + 9</keystroke>
+    </command>
+    <command>
+        <description>Open terminal window</description>
+        <keystroke>Alt + F12</keystroke>
+    </command>
+    <command>
+        <description>Synchronize</description>
+        <keystroke>Ctrl + Alt + Y</keystroke>
+    </command>
+    <command>
+        <description>Toggle maximizing editor</description>
+        <keystroke>Ctrl + Shift + F12</keystroke>
+    </command>
+    <command>
+        <description>Add to Favorites</description>
+        <keystroke>Alt + Shift + F</keystroke>
+    </command>
+    <command>
+        <description>Inspect current file with current profile</description>
+        <keystroke>Alt + Shift + I</keystroke>
+    </command>
+    <command>
+        <description>Quick switch current scheme</description>
+        <keystroke>Ctrl + `</keystroke>
+    </command>
+    <command>
+        <description>Open Settings dialog</description>
+        <keystroke>Ctrl + Alt + S</keystroke>
+    </command>
+    <command>
+        <description>Open Project Structure dialog</description>
+        <keystroke>Ctrl + Alt + Shift + S</keystroke>
+    </command>
+    <command>
+        <description>Find Action</description>
+        <keystroke>Ctrl + Shift + A</keystroke>
+    </command>
+    <command>
+        <description>Switch between tabs and tool window</description>
+        <keystroke>Ctrl + Tab</keystroke>
+    </command>
+</commands>
