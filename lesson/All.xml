@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commands>
+    <command>
+        <description>Basic code completion (the name of any class, method or variable)</description>
+        <keystroke>Ctrl + Space</keystroke>
+    </command>
+    <command>
+        <description>Smart code completion (filters the list of methods and variables by expected type)</description>
+        <keystroke>Ctrl + Shift + Space</keystroke>
+    </command>
+    <command>
+        <description>Complete statement</description>
+        <keystroke>Ctrl + Shift + Enter</keystroke>
+    </command>
+    <command>
+        <description>Parameter info (within method call arguments)</description>
+        <keystroke>Ctrl + P</keystroke>
+    </command>
+    <command>
+        <description>Quick documentation lookup</description>
+        <keystroke>Ctrl + Q</keystroke>
+    </command>
+    <command>
+        <description>External Doc</description>
+        <keystroke>Shift + F1</keystroke>
+    </command>
+    <command>
+        <description>Show descriptions of error or warning at caret</description>
+        <keystroke>Ctrl + F1</keystroke>
+    </command>
+    <command>
+        <description>Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)</description>
+        <keystroke>Alt + Insert</keystroke>
+    </command>
+    <command>
+        <description>Override methods</description>
+        <keystroke>Ctrl + O</keystroke>
+    </command>
+    <command>
+        <description>Implement methods</description>
+        <keystroke>Ctrl + I</keystroke>
+    </command>
+    <command>
+        <description>Surround with... (if..else, try..catch, for, synchronized, etc.)</description>
+        <keystroke>Ctrl + Alt + T</keystroke>
+    </command>
+    <command>
+        <description>Comment/uncomment with line comment</description>
+        <keystroke>Ctrl + /</keystroke>
+    </command>
+    <command>
+        <description>Comment/uncomment with block comment</description>
+        <keystroke>Ctrl + Shift + /</keystroke>
+    </command>
+
+    <command>
+        <description>Select successively increasing code blocks</description>
+        <keystroke>Ctrl + W</keystroke>
+    </command>
+    <command>
+        <description>Decrease current selection to previous state</description>
+        <keystroke>Ctrl + Shift + W</keystroke>
+    </command>
+    <command>
+        <description>Context info</description>
+        <keystroke>Alt + Q</keystroke>
+    </command>
+    <command>
+        <description>Show intention actions and quick-fixes</description>
+        <keystroke>Alt + Enter</keystroke>
+    </command>
+    <command>
+        <description>Reformat code</description>
+        <keystroke>Ctrl + Alt + L</keystroke>
+    </command>
+    <command>
+        <description>Optimize imports</description>
+        <keystroke>Ctrl + Alt + O</keystroke>
+    </command>
+    <command>
+        <description>Auto-indent line(s)</description>
+        <keystroke>Ctrl + Alt + I</keystroke>
+    </command>
+    <command>
+        <description>Indent selected lines</description>
+        <keystroke>Tab</keystroke>
+    </command>
+    <command>
+        <description>Unindent selected lines</description>
+        <keystroke>Shift + Tab</keystroke>
+    </command>
+    <command>
+        <description>Paste from recent buffers...</description>
+        <keystroke>Ctrl + Shift + V</keystroke>
+    </command>
+    <command>
+        <description>Duplicate current line or selected block</description>
+        <keystroke>Ctrl + D</keystroke>
+    </command>
+    <command>
+        <description>Delete line at carret</description>
+        <keystroke>Ctrl + Y</keystroke>
+    </command>
+    <command>
+        <description>Smart line join</description>
+        <keystroke>Ctrl + Shift + J</keystroke>
+    </command>
+    <command>
+        <description>Smart line split</description>
+        <keystroke>Ctrl + Enter</keystroke>
+    </command>
+    <command>
+        <description>Start new line</description>
+        <keystroke>Shift + Enter</keystroke>
+    </command>
+    <command>
+        <description>Toggle case for word at caret or selected block</description>
+        <keystroke>Ctrl + Shift + U</keystroke>
+    </command>
+    <command>
+        <description>Select till code block start</description>
+        <keystroke>Ctrl + Shift + [</keystroke>
+    </command>
+    <command>
+        <description>Select till code block end</description>
+        <keystroke>Ctrl + Shift + ]</keystroke>
+    </command>
+    <command>
+        <description>Delete to word end</description>
+        <keystroke>Ctrl + Delete</keystroke>
+    </command>
+    <command>
+        <description>Delete to word start</description>
+        <keystroke>Ctrl + Backspace</keystroke>
+    </command>
+    <command>
+        <description>Expand code block</description>
+        <keystroke>Ctrl + +</keystroke>
+    </command>
+    <command>
+        <description>Collapse code block</description>
+        <keystroke>Ctrl + -</keystroke>
+    </command>
+    <command>
+        <description>Expand all</description>
+        <keystroke>Ctrl + Shift + +</keystroke>
+    </command>
+    <command>
+        <description>Collapse all</description>
+        <keystroke>Ctrl + Shift + -</keystroke>
+    </command>
+    <command>
+        <description>Close active editor tab</description>
+        <keystroke>Ctrl + F4</keystroke>
+    </command>
+    <command>
+        <description>New line above current</description>
+        <keystroke>Ctrl + Alt + Enter</keystroke>
+    </command>
+</commands>

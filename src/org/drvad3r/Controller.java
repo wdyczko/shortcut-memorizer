@@ -40,6 +40,7 @@ public class Controller {
         inputLabel.setFocusTraversable(true);
         inputLabel.requestFocus();
         lessonComboBox.setItems(storageManager.getLessonList());
+        lessonComboBox.setFocusTraversable(false);
     }
 
     public void onKeyReleased(KeyEvent keyEvent) {

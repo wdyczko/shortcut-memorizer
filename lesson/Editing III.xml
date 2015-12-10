@@ -52,4 +52,8 @@
         <description>Close active editor tab</description>
         <keystroke>Ctrl + F4</keystroke>
     </command>
+    <command>
+        <description>New line above current</description>
+        <keystroke>Ctrl + Alt + Enter</keystroke>
+    </command>
 </commands>
