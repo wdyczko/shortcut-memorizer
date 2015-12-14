@@ -34,8 +34,7 @@ public class Controller {
     private int currentIndex = -1;
     private StorageManager storageManager;
 
-    public void initialize()
-    {
+    public void initialize() {
         storageManager = new StorageManager();
         inputLabel.setFocusTraversable(true);
         inputLabel.requestFocus();
@@ -45,36 +44,30 @@ public class Controller {
 
     public void onKeyReleased(KeyEvent keyEvent) {
         String prefix = determinePrefix(keyEvent);
-        if (keyEvent.getCode() == KeyCode.CONTROL ||keyEvent.getCode() == KeyCode.ALT || keyEvent.getCode() == KeyCode.SHIFT) {
+        if (keyEvent.getCode() == KeyCode.CONTROL || keyEvent.getCode() == KeyCode.ALT || keyEvent.getCode() == KeyCode.SHIFT) {
             keyEvent.consume();
             return;
-        }
-        else {
+        } else {
             String keyStroke = getKeyStroke(keyEvent, prefix);
             inputLabel.setText(keyStroke);
             checkPassCondition(keyStroke);
         }
     }
 
-    private void checkPassCondition(String keyStroke)
-    {
-        if(current.getKeystroke().trim().equals(keyStroke.trim()))
-        {
+    private void checkPassCondition(String keyStroke) {
+        if (current.getKeystroke().trim().equals(keyStroke.trim())) {
             statusLabel.setStyle(CORRECT_LABEL_STYLE);
             statusLabel.setText("Correct! " + current.getKeystroke());
             inputLabel.setText("");
             randomizeCommand();
 //            recoverEmptyStatusAfterTime(2);
-        }
-        else
-        {
+        } else {
             statusLabel.setStyle(WRONG_LABEL_STYLE);
             statusLabel.setText("Wrong!!! Should be: " + current.getKeystroke());
         }
     }
 
-    private void recoverEmptyStatusAfterTime(int time)
-    {
+    private void recoverEmptyStatusAfterTime(int time) {
         Timeline timeline = new Timeline(new KeyFrame(
                 Duration.seconds(time),
                 actionEvent -> statusLabel.setText("")
@@ -83,8 +76,7 @@ public class Controller {
     }
 
     private String getKeyStroke(KeyEvent keyEvent, String prefix) {
-        if(prefix.isEmpty())
-        {
+        if (prefix.isEmpty()) {
             return getKeyRepresentation(keyEvent);
         } else {
             return prefix + " + " + getKeyRepresentation(keyEvent);
@@ -176,38 +168,29 @@ public class Controller {
         String prefix = "";
         if (keyEvent.isControlDown() && keyEvent.isAltDown() && keyEvent.isShiftDown()) {
             prefix = "Ctrl + Alt + Shift";
-        } else if(keyEvent.isControlDown() && keyEvent.isAltDown() && !keyEvent.isShiftDown())
-        {
+        } else if (keyEvent.isControlDown() && keyEvent.isAltDown() && !keyEvent.isShiftDown()) {
             prefix = "Ctrl + Alt";
-        } else if(keyEvent.isControlDown() && !keyEvent.isAltDown() && keyEvent.isShiftDown())
-        {
+        } else if (keyEvent.isControlDown() && !keyEvent.isAltDown() && keyEvent.isShiftDown()) {
             prefix = "Ctrl + Shift";
-        } else if (!keyEvent.isControlDown() && keyEvent.isAltDown() && keyEvent.isShiftDown())
-        {
+        } else if (!keyEvent.isControlDown() && keyEvent.isAltDown() && keyEvent.isShiftDown()) {
             prefix = "Alt + Shift";
-        } else if (keyEvent.isControlDown() && !keyEvent.isAltDown() && !keyEvent.isShiftDown())
-        {
+        } else if (keyEvent.isControlDown() && !keyEvent.isAltDown() && !keyEvent.isShiftDown()) {
             prefix = "Ctrl";
-        } else if (!keyEvent.isControlDown() && keyEvent.isAltDown() && !keyEvent.isShiftDown())
-        {
+        } else if (!keyEvent.isControlDown() && keyEvent.isAltDown() && !keyEvent.isShiftDown()) {
             prefix = "Alt";
-        } else if (!keyEvent.isControlDown() && !keyEvent.isAltDown() && keyEvent.isShiftDown())
-        {
+        } else if (!keyEvent.isControlDown() && !keyEvent.isAltDown() && keyEvent.isShiftDown()) {
             prefix = "Shift";
         }
         return prefix;
     }
 
-    private void randomizeCommand()
-    {
+    private void randomizeCommand() {
         Random random = new Random();
-        do
-        {
+        do {
             currentIndex = random.nextInt(commandList.getCommands().size());
-        } while(passed.contains(currentIndex));
+        } while (passed.contains(currentIndex));
         passed.add(currentIndex);
-        if(passed.size() == commandList.getCommands().size())
-        {
+        if (passed.size() == commandList.getCommands().size()) {
             passed.clear();
         }
         current = commandList.getCommands().get(currentIndex);
@@ -215,8 +198,7 @@ public class Controller {
     }
 
     @FXML
-    private void onLessonChoose(ActionEvent actionEvent)
-    {
+    private void onLessonChoose(ActionEvent actionEvent) {
         inputLabel.setText("");
         statusLabel.setText("");
         commandList = storageManager.load(lessonComboBox.getSelectionModel().getSelectedItem().toString());

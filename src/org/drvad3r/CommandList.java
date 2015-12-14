@@ -16,30 +16,25 @@ public class CommandList {
     private ObservableList<Command> commands;
     private String description;
 
-    public CommandList()
-    {
+    public CommandList() {
         this.commands = FXCollections.observableArrayList();
     }
 
     @XmlElement(name = "command")
-    public ObservableList<Command> getCommands()
-    {
+    public ObservableList<Command> getCommands() {
         return commands;
     }
 
-    public void setCommands(ObservableList<Command> commands)
-    {
+    public void setCommands(ObservableList<Command> commands) {
         this.commands = commands;
     }
 
     @XmlElement(name = "description")
-    public String getDescription()
-    {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description)
-    {
+    public void setDescription(String description) {
         this.description = description;
     }
 }

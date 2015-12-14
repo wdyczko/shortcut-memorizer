@@ -32,4 +32,16 @@
         <description>Replace structurally</description>
         <keystroke>Ctrl + Shift + M</keystroke>
     </command>
+    <command>
+        <description>Select All Occurences</description>
+        <keystroke>Ctrl + Alt + Shift + J</keystroke>
+    </command>
+    <command>
+        <description>Add selection for next occurence</description>
+        <keystroke>Alt + J</keystroke>
+    </command>
+    <command>
+        <description>Remove selection for occurence</description>
+        <keystroke>Alt + Shift + J</keystroke>
+    </command>
 </commands>

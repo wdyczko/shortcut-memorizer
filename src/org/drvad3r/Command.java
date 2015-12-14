@@ -11,44 +11,36 @@ public class Command {
     private StringProperty description;
     private StringProperty keystroke;
 
-    public Command()
-    {
+    public Command() {
         this(null, null);
     }
 
-    public Command(String description, String command)
-    {
+    public Command(String description, String command) {
         this.description = new SimpleStringProperty(description);
         this.keystroke = new SimpleStringProperty(command);
     }
 
-    public String getDescription()
-    {
+    public String getDescription() {
         return description.get();
     }
 
-    public StringProperty descriptionProperty()
-    {
+    public StringProperty descriptionProperty() {
         return description;
     }
 
-    public void setDescription(String description)
-    {
+    public void setDescription(String description) {
         this.description.set(description);
     }
 
-    public String getKeystroke()
-    {
+    public String getKeystroke() {
         return keystroke.get();
     }
 
-    public StringProperty keystrokeProperty()
-    {
+    public StringProperty keystrokeProperty() {
         return keystroke;
     }
 
-    public void setKeystroke(String keystroke)
-    {
+    public void setKeystroke(String keystroke) {
         this.keystroke.set(keystroke);
     }
 }

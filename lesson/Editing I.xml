@@ -52,4 +52,16 @@
         <description>Comment/uncomment with block comment</description>
         <keystroke>Ctrl + Shift + /</keystroke>
     </command>
+    <command>
+        <description>Unwrap/Remove</description>
+        <keystroke>Ctrl + Shift + Delete</keystroke>
+    </command>
+    <command>
+        <description>Insert live template</description>
+        <keystroke>Ctrl + J</keystroke>
+    </command>
+    <command>
+        <description>Surround with live template...</description>
+        <keystroke>Ctrl + Alt + J</keystroke>
+    </command>
 </commands>
