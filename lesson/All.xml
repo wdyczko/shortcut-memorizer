@@ -157,4 +157,379 @@
         <description>New line above current</description>
         <keystroke>Ctrl + Alt + Enter</keystroke>
     </command>
+    <command>
+        <description>Go to class</description>
+        <keystroke>Ctrl + N</keystroke>
+    </command>
+    <command>
+        <description>Go to file</description>
+        <keystroke>Ctrl + Shift + N</keystroke>
+    </command>
+    <command>
+        <description>Go to symbol</description>
+        <keystroke>Ctrl + Alt + Shift + N</keystroke>
+    </command>
+    <command>
+        <description>Go to next editor tab</description>
+        <keystroke>Alt + Right</keystroke>
+    </command>
+    <command>
+        <description>Go to previous editor tab</description>
+        <keystroke>Alt + Left</keystroke>
+    </command>
+    <command>
+        <description>Go to previous tool window</description>
+        <keystroke>Escape</keystroke>
+    </command>
+    <command>
+        <description>Hide active or last active window</description>
+        <keystroke>Shift + Escape</keystroke>
+    </command>
+    <command>
+        <description>Close active run/messages/find/... tab</description>
+        <keystroke>Ctrl + Shift + F4</keystroke>
+    </command>
+    <command>
+        <description>Go to line</description>
+        <keystroke>Ctrl + G</keystroke>
+    </command>
+    <command>
+        <description>Recent files popup</description>
+        <keystroke>Ctrl + E</keystroke>
+    </command>
+    <command>
+        <description>Navigate back</description>
+        <keystroke>Ctrl + Alt + Backspace</keystroke>
+    </command>
+    <command>
+        <description>Navigate to last edit location</description>
+        <keystroke>Ctrl + Shift + Backspace</keystroke>
+    </command>
+    <command>
+        <description>Select current file or symbol in any view</description>
+        <keystroke>Alt + F1</keystroke>
+    </command>
+
+    <command>
+        <description>Go to declaration</description>
+        <keystroke>Ctrl + B</keystroke>
+    </command>
+    <command>
+        <description>Go to implementation(s)</description>
+        <keystroke>Ctrl + Alt + B</keystroke>
+    </command>
+    <command>
+        <description>Open quick definition lookup</description>
+        <keystroke>Ctrl + Shift + I</keystroke>
+    </command>
+    <command>
+        <description>Go to type declaration</description>
+        <keystroke>Ctrl + Shift + B</keystroke>
+    </command>
+    <command>
+        <description>Go to super-method/super-class</description>
+        <keystroke>Ctrl + U</keystroke>
+    </command>
+    <command>
+        <description>Go to previous method</description>
+        <keystroke>Alt + Up</keystroke>
+    </command>
+    <command>
+        <description>Go to next method</description>
+        <keystroke>Alt + Down</keystroke>
+    </command>
+    <command>
+        <description>Move to code block end</description>
+        <keystroke>Ctrl + ]</keystroke>
+    </command>
+    <command>
+        <description>Move to code block start</description>
+        <keystroke>Ctrl + [</keystroke>
+    </command>
+    <command>
+        <description>File structure popup</description>
+        <keystroke>Ctrl + F12</keystroke>
+    </command>
+    <command>
+        <description>Type hierarchy</description>
+        <keystroke>Ctrl + H</keystroke>
+    </command>
+    <command>
+        <description>Method hierarchy</description>
+        <keystroke>Ctrl + Shift + H</keystroke>
+    </command>
+
+    <command>
+        <description>Call hierarchy</description>
+        <keystroke>Ctrl + Alt + H</keystroke>
+    </command>
+    <command>
+        <description>Next highlighted error</description>
+        <keystroke>F2</keystroke>
+    </command>
+    <command>
+        <description>Previous highlighted error</description>
+        <keystroke>Shift + F2</keystroke>
+    </command>
+    <command>
+        <description>Edit source</description>
+        <keystroke>F4</keystroke>
+    </command>
+    <command>
+        <description>View source</description>
+        <keystroke>Ctrl + Enter</keystroke>
+    </command>
+    <command>
+        <description>Show navigation bar</description>
+        <keystroke>Alt + Home</keystroke>
+    </command>
+    <command>
+        <description>Toggle bookmark</description>
+        <keystroke>F11</keystroke>
+    </command>
+    <command>
+        <description>Toggle bookmark with mnemonic</description>
+        <keystroke>Ctrl + F11</keystroke>
+    </command>
+    <command>
+        <description>Show bookmarks</description>
+        <keystroke>Shift + F11</keystroke>
+    </command>
+
+    <command>
+        <description>Open messages window</description>
+        <keystroke>Alt + 0</keystroke>
+    </command>
+    <command>
+        <description>Open project window</description>
+        <keystroke>Alt + 1</keystroke>
+    </command>
+    <command>
+        <description>Open favourites window</description>
+        <keystroke>Alt + 2</keystroke>
+    </command>
+    <command>
+        <description>Open find window (if looked for)</description>
+        <keystroke>Alt + 3</keystroke>
+    </command>
+    <command>
+        <description>Open run window</description>
+        <keystroke>Alt + 4</keystroke>
+    </command>
+    <command>
+        <description>Open debug window</description>
+        <keystroke>Alt + 5</keystroke>
+    </command>
+    <command>
+        <description>Open todo window</description>
+        <keystroke>Alt + 6</keystroke>
+    </command>
+    <command>
+        <description>Open structure window</description>
+        <keystroke>Alt + 7</keystroke>
+    </command>
+    <command>
+        <description>Open version control window</description>
+        <keystroke>Alt + 9</keystroke>
+    </command>
+    <command>
+        <description>Open terminal window</description>
+        <keystroke>Alt + F12</keystroke>
+    </command>
+    <command>
+        <description>Synchronize</description>
+        <keystroke>Ctrl + Alt + Y</keystroke>
+    </command>
+    <command>
+        <description>Toggle maximizing editor</description>
+        <keystroke>Ctrl + Shift + F12</keystroke>
+    </command>
+    <command>
+        <description>Add to Favorites</description>
+        <keystroke>Alt + Shift + F</keystroke>
+    </command>
+    <command>
+        <description>Inspect current file with current profile</description>
+        <keystroke>Alt + Shift + I</keystroke>
+    </command>
+    <command>
+        <description>Quick switch current scheme</description>
+        <keystroke>Ctrl + `</keystroke>
+    </command>
+    <command>
+        <description>Open Settings dialog</description>
+        <keystroke>Ctrl + Alt + S</keystroke>
+    </command>
+    <command>
+        <description>Open Project Structure dialog</description>
+        <keystroke>Ctrl + Alt + Shift + S</keystroke>
+    </command>
+    <command>
+        <description>Find Action</description>
+        <keystroke>Ctrl + Shift + A</keystroke>
+    </command>
+    <command>
+        <description>Switch between tabs and tool window</description>
+        <keystroke>Ctrl + Tab</keystroke>
+    </command>
+    <command>
+        <description>Copy</description>
+        <keystroke>F5</keystroke>
+    </command>
+    <command>
+        <description>Move</description>
+        <keystroke>F6</keystroke>
+    </command>
+    <command>
+        <description>Safe Delete</description>
+        <keystroke>Alt + Delete</keystroke>
+    </command>
+    <command>
+        <description>Rename</description>
+        <keystroke>Shift + F6</keystroke>
+    </command>
+    <command>
+        <description>Change Signature</description>
+        <keystroke>Ctrl + F6</keystroke>
+    </command>
+    <command>
+        <description>Inline</description>
+        <keystroke>Ctrl + Alt + N</keystroke>
+    </command>
+    <command>
+        <description>Extract Method</description>
+        <keystroke>Ctrl + Alt + M</keystroke>
+    </command>
+    <command>
+        <description>Extract Variable</description>
+        <keystroke>Ctrl + Alt + V</keystroke>
+    </command>
+    <command>
+        <description>Extract Field</description>
+        <keystroke>Ctrl + Alt + F</keystroke>
+    </command>
+    <command>
+        <description>Extract Constant</description>
+        <keystroke>Ctrl + Alt + C</keystroke>
+    </command>
+    <command>
+        <description>Extract Parameter</description>
+        <keystroke>Ctrl + Alt + P</keystroke>
+    </command>
+    <command>
+        <description>Refactor This...</description>
+        <keystroke>Ctrl + Alt + Shift + T</keystroke>
+    </command>
+    <command>
+        <description>Find</description>
+        <keystroke>Ctrl + F</keystroke>
+    </command>
+    <command>
+        <description>Find next</description>]
+        <keystroke>F3</keystroke>
+    </command>
+    <command>
+        <description>Find previous</description>
+        <keystroke>Shift + F3</keystroke>
+    </command>
+    <command>
+        <description>Replace</description>
+        <keystroke>Ctrl + R</keystroke>
+    </command>
+    <command>
+        <description>Find in path</description>
+        <keystroke>Ctrl + Shift + F</keystroke>
+    </command>
+    <command>
+        <description>Replace in path</description>
+        <keystroke>Ctrl + Shift + R</keystroke>
+    </command>
+    <command>
+        <description>Search structurally</description>
+        <keystroke>Ctrl + Shift + S</keystroke>
+    </command>
+    <command>
+        <description>Replace structurally</description>
+        <keystroke>Ctrl + Shift + M</keystroke>
+    </command>
+    <command>
+        <description>Find usages</description>
+        <keystroke>Alt + F7</keystroke>
+    </command>
+    <command>
+        <description>Find usages in file</description>
+        <keystroke>Ctrl + F7</keystroke>
+    </command>
+    <command>
+        <description>Highlight usages in file</description>
+        <keystroke>Ctrl + Shift + F7</keystroke>
+    </command>
+    <command>
+        <description>Show usages</description>
+        <keystroke>Ctrl + Alt + F7</keystroke>
+    </command>
+    <command>
+        <description>Step over</description>
+        <keystroke>F8</keystroke>
+    </command>
+    <command>
+        <description>Step into</description>
+        <keystroke>F7</keystroke>
+    </command>
+    <command>
+        <description>Smart step into</description>
+        <keystroke>Shift + F7</keystroke>
+    </command>
+    <command>
+        <description>Step out</description>
+        <keystroke>Shift + F8</keystroke>
+    </command>
+    <command>
+        <description>Run to cursor</description>
+        <keystroke>Alt + F9</keystroke>
+    </command>
+    <command>
+        <description>Evaluate expression</description>
+        <keystroke>Alt + F8</keystroke>
+    </command>
+    <command>
+        <description>Resume program</description>
+        <keystroke>F9</keystroke>
+    </command>
+    <command>
+        <description>Toggle breakpoint</description>
+        <keystroke>Ctrl + F8</keystroke>
+    </command>
+    <command>
+        <description>View breakpoints</description>
+        <keystroke>Ctrl + Shift + F8</keystroke>
+    </command>
+    <command>
+        <description>Make project (compile modified and dependent)</description>
+        <keystroke>Ctrl + F9</keystroke>
+    </command>
+    <command>
+        <description>Compile selected file, package or module</description>
+        <keystroke>Ctrl + Shift + F9</keystroke>
+    </command>
+    <command>
+        <description>Select configuration and run</description>
+        <keystroke>Alt + Shift + F10</keystroke>
+    </command>
+    <command>
+        <description>Select configuration and debug</description>
+        <keystroke>Alt + Shift + F9</keystroke>
+    </command>
+    <command>
+        <description>Run</description>
+        <keystroke>Shift + F10</keystroke>
+    </command>
+    <command>
+        <description>Debug</description>
+        <keystroke>Shift + F9</keystroke>
+    </command>
+    <command>
+        <description>Run context configuration from editor</description>
+        <keystroke>Ctrl + Shift + F10</keystroke>
+    </command>
 </commands>
