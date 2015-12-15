@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.util.Duration;
@@ -19,6 +20,10 @@ import java.util.Random;
 public class Controller {
     public static final String CORRECT_LABEL_STYLE = "-fx-text-fill: green; -fx-font-size: 24px;";
     public static final String WRONG_LABEL_STYLE = "-fx-text-fill: red; -fx-font-size: 24px;";
+    @FXML
+    private Label progressLabel;
+    @FXML
+    private ProgressBar progressBar;
     @FXML
     private Label statusLabel;
     @FXML
@@ -189,6 +194,8 @@ public class Controller {
         do {
             currentIndex = random.nextInt(commandList.getCommands().size());
         } while (passed.contains(currentIndex));
+        progressBar.setProgress( (double) passed.size() / (double) commandList.getCommands().size() );
+        progressLabel.setText(String.format("%d/%d", passed.size(), commandList.getCommands().size()));
         passed.add(currentIndex);
         if (passed.size() == commandList.getCommands().size()) {
             passed.clear();
