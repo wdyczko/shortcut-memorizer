@@ -20,7 +20,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader();
         Parent root = loader.load(getClass().getResource("View.fxml"));
         primaryStage.setTitle("Shortcut Memorizer");
-        primaryStage.setScene(new Scene(root, 700, 275));
+        primaryStage.setScene(new Scene(root, 700, 375));
         primaryStage.show();
         primaryStage.setResizable(false);
         StorageManager storageManager = new StorageManager();

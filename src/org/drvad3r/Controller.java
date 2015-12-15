@@ -2,8 +2,10 @@ package org.drvad3r;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
@@ -20,6 +22,8 @@ import java.util.Random;
 public class Controller {
     public static final String CORRECT_LABEL_STYLE = "-fx-text-fill: green; -fx-font-size: 24px;";
     public static final String WRONG_LABEL_STYLE = "-fx-text-fill: red; -fx-font-size: 24px;";
+    @FXML
+    private PieChart statsPieChart;
     @FXML
     private Label progressLabel;
     @FXML
@@ -213,5 +217,6 @@ public class Controller {
         currentIndex = -1;
         randomizeCommand();
         inputLabel.requestFocus();
+        progressBar.setVisible(true);
     }
 }

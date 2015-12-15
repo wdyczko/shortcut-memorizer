@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -21,27 +22,27 @@
             <children>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.valignment="CENTER">
                     <children>
-                        <ComboBox fx:id="lessonComboBox" onAction="#onLessonChoose" prefWidth="600.0" promptText="Pick lesson module" style="-fx-font-size: 24px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <ComboBox fx:id="lessonComboBox" onAction="#onLessonChoose" prefWidth="600.0" promptText="Modules" style="-fx-font-size: 24px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                     </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                     <children>
-                        <Label fx:id="descriptionLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18px;" text="Description" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label fx:id="descriptionLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18px;" text="Please pick module to begin your training" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                     </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                     <children>
-                        <Label fx:id="inputLabel" alignment="CENTER" contentDisplay="CENTER" onKeyReleased="#onKeyReleased" style="-fx-font-size: 24px;" text="Input" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label fx:id="inputLabel" alignment="CENTER" contentDisplay="CENTER" onKeyReleased="#onKeyReleased" style="-fx-font-size: 24px;" text="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                     </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                     <children>
-                        <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 24px;" text="Status" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 24px;" text="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                     </children>
                 </AnchorPane>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
                <children>
-                  <ProgressBar fx:id="progressBar" prefHeight="25.0" prefWidth="500.0" progress="0.0" />
+                  <ProgressBar fx:id="progressBar" prefHeight="25.0" prefWidth="450.0" progress="0.0" visible="false" />
                   <Label fx:id="progressLabel" text="">
                      <HBox.margin>
                         <Insets left="20.0" />
