@@ -23,8 +23,6 @@ public class Controller {
     public static final String CORRECT_LABEL_STYLE = "-fx-text-fill: linear-gradient(green, #004500); -fx-font-size: 24px;";
     public static final String WRONG_LABEL_STYLE = "-fx-text-fill: linear-gradient(#ff0000, #5d0000); -fx-font-size: 24px;";
     @FXML
-    private PieChart statsPieChart;
-    @FXML
     private Label progressLabel;
     @FXML
     private ProgressBar progressBar;
