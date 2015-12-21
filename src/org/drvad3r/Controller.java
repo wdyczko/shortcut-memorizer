@@ -22,18 +22,12 @@ import java.util.Random;
 public class Controller {
     public static final String CORRECT_LABEL_STYLE = "-fx-text-fill: linear-gradient(green, #004500); -fx-font-size: 24px;";
     public static final String WRONG_LABEL_STYLE = "-fx-text-fill: linear-gradient(#ff0000, #5d0000); -fx-font-size: 24px;";
-    @FXML
-    private Label progressLabel;
-    @FXML
-    private ProgressBar progressBar;
-    @FXML
-    private Label statusLabel;
-    @FXML
-    private Label descriptionLabel;
-    @FXML
-    private ComboBox lessonComboBox;
-    @FXML
-    private Label inputLabel;
+    public Label progressLabel;
+    public ProgressBar progressBar;
+    public Label statusLabel;
+    public Label descriptionLabel;
+    public ComboBox lessonComboBox;
+    public Label inputLabel;
 
     private Command current;
     private CommandList commandList;
@@ -67,19 +61,10 @@ public class Controller {
             statusLabel.setText("Correct! " + current.getKeystroke());
             inputLabel.setText("");
             randomizeCommand();
-//            recoverEmptyStatusAfterTime(2);
         } else {
             statusLabel.setStyle(WRONG_LABEL_STYLE);
             statusLabel.setText("Wrong!!! Should be: " + current.getKeystroke());
         }
-    }
-
-    private void recoverEmptyStatusAfterTime(int time) {
-        Timeline timeline = new Timeline(new KeyFrame(
-                Duration.seconds(time),
-                actionEvent -> statusLabel.setText("")
-        ));
-        timeline.play();
     }
 
     private String getKeyStroke(KeyEvent keyEvent, String prefix) {
@@ -196,7 +181,7 @@ public class Controller {
         do {
             currentIndex = random.nextInt(commandList.getCommands().size());
         } while (passed.contains(currentIndex));
-        progressBar.setProgress( (double) passed.size() / (double) commandList.getCommands().size() );
+        progressBar.setProgress((double) passed.size() / (double) commandList.getCommands().size());
         progressLabel.setText(String.format("%d/%d", passed.size(), commandList.getCommands().size()));
         passed.add(currentIndex);
         if (passed.size() == commandList.getCommands().size()) {
@@ -206,8 +191,7 @@ public class Controller {
         descriptionLabel.setText(current.getDescription());
     }
 
-    @FXML
-    private void onLessonChoose(ActionEvent actionEvent) {
+    public void onLessonChoose() {
         inputLabel.setText("");
         statusLabel.setText("");
         commandList = storageManager.load(lessonComboBox.getSelectionModel().getSelectedItem().toString());
