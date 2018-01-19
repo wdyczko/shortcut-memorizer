@@ -32,9 +32,9 @@ public class StorageManager {
 
     public CommandList load(String lessonName) {
         if (lessonName.contains(".xml"))
-            return loadCommandDataFromFile(new File(System.getProperty("user.dir") + "\\lesson\\" + lessonName));
+            return loadCommandDataFromFile(new File(System.getProperty("user.dir") + File.separator + "lesson" + File.separator + lessonName));
         else
-            return loadCommandDataFromFile(new File(System.getProperty("user.dir") + "\\lesson\\" + lessonName + ".xml"));
+            return loadCommandDataFromFile(new File(System.getProperty("user.dir") + File.separator + "lesson" + File.separator + lessonName + ".xml"));
     }
 
     public void saveCommandDataToFile(File file, CommandList list) {
@@ -50,15 +50,15 @@ public class StorageManager {
 
     public void save(String lessonName, CommandList list) {
         if (lessonName.contains(".xml"))
-            saveCommandDataToFile(new File(System.getProperty("user.dir") + "\\lesson\\" + lessonName), list);
+            saveCommandDataToFile(new File(System.getProperty("user.dir") + File.separator + "lesson" + File.separator + lessonName), list);
         else
-            saveCommandDataToFile(new File(System.getProperty("user.dir") + "\\lesson\\" + lessonName + ".xml"), list);
+            saveCommandDataToFile(new File(System.getProperty("user.dir") + File.separator + "lesson" + File.separator + lessonName + ".xml"), list);
     }
 
     public ObservableList<String> getLessonList() {
         final ObservableList<String> lessons = FXCollections.observableArrayList();
         try {
-            Stream<Path> list = Files.list(new File(System.getProperty("user.dir") + "\\lesson\\").toPath());
+            Stream<Path> list = Files.list(new File(System.getProperty("user.dir") + File.separator + "lesson" + File.separator).toPath());
             list.forEach(path -> lessons.add(path.getFileName().toString().substring(0, path.getFileName().toString().length() - 4)));
         } catch (IOException e) {
             e.printStackTrace();
